@@ -6,7 +6,7 @@
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 18px;
-    --embassy-red: #BF2C18;
+    --embassy-red: #FF4A4A;
   }
   body {
     margin: 0;
@@ -14,9 +14,18 @@
   header {
     background-color: var(--embassy-red, red);
     color: white;
-    padding: 1.5rem 0.5rem;
-    font-size: 3rem;
+    padding: 0em;
+    font-size: 1em;
     text-align: center;
+  }
+  header a {
+    color: inherit;
+    text-decoration: inherit;
+    padding: 0.5em;
+    display: inline-block;
+  }
+  header a:hover {
+    background-color: red;
   }
   header img {
     height: 1em;
@@ -32,11 +41,66 @@
     max-width: 720px;
     margin: auto;
   }
+  figure {
+    margin: 0;
+  }
+  figure>img {
+    max-width: 100%;
+  }
+  figure>p {
+    margin: 0;
+    padding: 0.5rem 0;
+    color: grey;
+  }
+  a {
+    color: var(--embassy-red, red);
+  }
+  a:hover {
+    background-color: #eee;
+  }
 </style>
 <header>
-  <img src="embassy-emblem.svg" alt="Sutro">
-  <sf-logo><span>SF</span> Embassy</sf-logo>
+  <a href="#">
+    <img src="brand/embassy-emblem.svg" alt="Sutro">
+    <sf-logo><span>SF</span> Embassy</sf-logo>
+  </a>
+  <a href="#houston">Houston 2016</a>
+  <a href="#history">Past missions</a>
 </header>
+
+<figure id="banner">
+  <img src="brand/houston-header.png" alt="">
+</figure>
 <main>
-  <p>The embassy web portal is currently down for initial maintainance. There is no help available.
+  <!-- <p>The embassy web portal is currently down for initial maintainance. There is no help available.</p> -->
+
+  <h2 id="houston">Expedition to Houston 2016</h2>
+  <p>For a weekend in December, the Barbara Jordan Post Office in Houston, Texas will be turned into an immersive art installation and performance hall by Aphex Twin, Bjork, Squarepusher, John Carpenter, ODESZA, Butthole Surfers, Kaskade, Chet Faker, Travis Scott, Run The Jewels, Banks, Blood Orange, Little Dragon, The Jesus and Mary Chain and a couple dozen other acts. It’s Aphex Twin’s first US show in 8 years.</p>
+
+  <p>The show is called <a href="http://www.dayfornight.io">Day for Night</a></p>
+
+  <a href="https://www.facebook.com/groups/194748190963674/">
+    Houston Facebook group
+  </a>
+
+  <h3>What's an Expedition</h3>
+  <p>SF EMBASSY Missions to Iceland Airwaves and SXSW were 100 person week-long adventures with dozens of events and the logistical challenges to match. Expeditions are smaller in scale, shorter in duration, and we expect them to be easier to plan. </p>
+
+  <h2 id="history">Past missions</h2>
+
+  <h3>Iceland 2013</h3>
+  <figure>
+    <img src="http://rvkgrapevine.wpengine.netdna-cdn.com/files/2013/11/embassy-1024x681.jpg" alt="">
+    <p><a href="http://bit.ly/sfembassy-grapevine2013">Reykjavík Grapevine writeup on SF Embassy: Mission to Iceland</a></p>
+  </figure>
+
+  <h3>Austin 2011</h3>
+  <figure>
+    <img src="https://www.wired.com/images_blogs/underwire/2011/03/MG_5641.jpg" alt="">
+    <p><a href="http://bit.ly/sfembassy-wired">WIRED writeup on the SF Embassy: Mission to Austin</a></p>
+  </figure>
 </main>
+
+<footer>
+
+</footer>
